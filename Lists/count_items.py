@@ -10,5 +10,3 @@ def count(mylist):
 
 
 count(mylist)
-
-
