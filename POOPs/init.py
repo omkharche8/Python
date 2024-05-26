@@ -18,7 +18,7 @@ area_one = Circle(5)
 area_two = Circle(7)
 
 
-#Calling Parents class __init__ in inheritancce
+# Calling Parents class __init__ in inheritancce
 
 class Master():
     def __init__(self, name):
