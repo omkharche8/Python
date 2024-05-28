@@ -13,6 +13,6 @@ def leader(arr, n):
             print(arr[i], end=' ')
 
 
-arr = [16, 17, 4, 3, 5, 2]
+arr = [16, 17, 4, 3, 5, 2, 1]
 n = len(arr)
 leader(arr, n)
