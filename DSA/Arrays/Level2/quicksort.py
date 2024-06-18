@@ -6,11 +6,10 @@ def quicksort(arr):
     else:
         pivot = arr[0]
         left = [x for x in arr[1:] if x < pivot]
-        middle = [x for x in arr if x == pivot]
         right = [x for x in arr[1:] if x >= pivot]
-        return quicksort(left) + middle + quicksort(right)
+        return quicksort(left) + [pivot] + quicksort(right)
 
 
-arr = [3, 6, 8, 10, 1, 2, 1]
+arr = [5,2,3,1]
 sorted_arr = quicksort(arr)
 print(sorted_arr)
