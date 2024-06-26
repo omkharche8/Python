@@ -10,6 +10,22 @@ class TreeNode:
         child.parent = self
         self.children.append(child)  # append the children in the list
 
+    def print_tree(self):
+        spaces = ' ' * self.get_level() * 3
+        prefix = spaces + '|__' if self.parent else ""
+        print(prefix + self.data)
+        if len(self.children):     # as the leaf node has no children so we have to put this case
+            for child in self.children:
+                child.print_tree()
+
+    def get_level(self):   # Getting 0,1,2 level of the tree.
+        level = 0
+        p = self.parent
+        while p:   # Go to parent, parent's parent, parent's parent's parent and then increment on that
+            level += 1
+            p = p.parent
+        return level
+
 
 def build_product_tree():
     root = TreeNode("Electronics")  # don't touch the root, its supreme
@@ -38,4 +54,5 @@ def build_product_tree():
 
 if __name__ == '__main__':
     root = build_product_tree()
+    root.print_tree()
     pass
