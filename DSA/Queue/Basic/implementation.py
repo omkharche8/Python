@@ -47,5 +47,5 @@ pq.enqueue({
     'price': 135
 })
 
-# print(pq.buffer)
+print(pq.buffer)
 print(pq.dequeue())
