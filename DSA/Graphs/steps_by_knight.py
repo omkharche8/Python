@@ -13,6 +13,7 @@
 
 from collections import deque
 
+
 class Solution:
 
     # Function to check if a position is valid
