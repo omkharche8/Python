@@ -2,9 +2,6 @@
 
 import heapq
 
-iPair = tuple
-
-
 class Graph:
 
     def __init__(self, V):
