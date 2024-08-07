@@ -25,9 +25,6 @@
 # 0 0 1 1 0 1 0
 
 
-
-
-
 def numofislands(grid):
     if not grid:
         return 0
@@ -57,6 +54,6 @@ def numofislands(grid):
 
     return num_of_islands
 
+# Test case
 grid = [[0, 1], [1, 0], [1, 1], [1, 0]]
 print(numofislands(grid))  # Output should be 1
-
